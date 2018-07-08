@@ -1,7 +1,7 @@
 import {IsString, IsIn, Length, Validate} from 'class-validator'
 import {validBoard} from './boardValidator'
 
-
+// Game model made for validation purposes.
 export default class GameModel {
 
     @Length(3, 20,{ message: "the name must contain between 3-20 characters"})
