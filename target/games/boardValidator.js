@@ -11,8 +11,7 @@ let validBoard = class validBoard {
     validate(board) {
         return Array.isArray(board) && board.length === 3
             && board.every(Array.isArray)
-            && board.every(element => element.length === 3)
-            && board.every(element => element.every(field => ['x', 'o'].indexOf(field) !== -1));
+            && board.every(element => element.length === 3);
     }
     defaultMessage() {
         return "The provided board doesn't meet the requirements";
